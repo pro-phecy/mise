@@ -1,0 +1,14 @@
+node_modules/
+.npm-cache/
+.expo/
+.android-user/
+android/local.properties
+android/.gradle/
+android/.gradle-cache/
+android/**/build/
+android/**/.cxx/
+dist/
+web-build/
+.env
+*.log
+supabase/.temp/

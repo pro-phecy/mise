@@ -1,0 +1,11 @@
+[functions.generate-meals]
+verify_jwt = true
+
+[functions.mise-chat]
+verify_jwt = true
+
+[functions.identify-ingredients]
+verify_jwt = true
+
+[functions.delete-account]
+verify_jwt = true

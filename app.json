@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "mise",
+    "slug": "mise-kitchen",
+    "scheme": "mise",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "imageWidth": 220,
+      "resizeMode": "contain",
+      "backgroundColor": "#F6F5EF"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.misekitchen.app"
+    },
+    "android": {
+      "package": "com.misekitchen.app",
+      "edgeToEdgeEnabled": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#374338"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "mise uses your camera to scan food barcodes and identify fridge ingredients.",
+          "microphonePermission": false,
+          "recordAudioAndroid": false,
+          "barcodeScannerEnabled": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "mise uses a photo you choose to identify fridge ingredients. Photos are processed for the scan and are not stored.",
+          "cameraPermission": "mise uses your camera to identify ingredients in your fridge.",
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}

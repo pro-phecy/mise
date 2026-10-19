@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#374338">
+  <title>Privacy Policy — mise</title>
+  <style>
+    :root{color-scheme:light;--paper:#f6f5ef;--ink:#242a23;--muted:#697064;--green:#374338;--line:#e2e3d9;--gold:#d9b86c}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}
+    main{width:min(760px,calc(100% - 36px));margin:0 auto;padding:56px 0 80px}header{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:32px}
+    .brand{font-weight:800;letter-spacing:.08em;text-transform:lowercase;color:var(--green)}.eyebrow{color:var(--muted);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin:20px 0 8px}
+    h1{font-size:clamp(2rem,7vw,3.25rem);letter-spacing:-.045em;line-height:1.1;margin:.2em 0}h2{font-size:1.25rem;margin:2em 0 .5em}p,li{color:#50574d}a{color:var(--green);text-decoration-thickness:1px;text-underline-offset:3px}
+    .notice{border-left:4px solid var(--gold);background:#fff9e8;padding:14px 18px;border-radius:0 12px 12px 0}.updated{font-size:.9rem;color:var(--muted)}footer{border-top:1px solid var(--line);margin-top:48px;padding-top:20px;color:var(--muted);font-size:.9rem}
+  </style>
+</head>
+<body>
+<main>
+  <header><div class="brand">mise</div><p class="eyebrow">Privacy</p><h1>Privacy Policy</h1><p class="updated">Effective October 17, 2026 · Last updated October 17, 2026</p></header>
+  <p class="notice"><strong>Publisher setup required:</strong> replace the bracketed publisher and support details on this page before publishing it or submitting mise to an app store.</p>
+  <p>This policy explains how <strong>[PUBLISHER LEGAL NAME]</strong> (“we”) handles information when you use the mise mobile app. Questions or privacy requests: <a href="mailto:[SUPPORT EMAIL]">[SUPPORT EMAIL]</a>.</p>
+
+  <h2>Information you provide</h2>
+  <p>When you create an account, Supabase Auth processes your email address, account identifier, and authentication data. mise stores the cooking information you choose to add, including pantry items and quantities, expiry dates, saved recipes, meal plans, shopping lists, cooking history, household membership, and preferences such as dietary styles, allergies, cooking skill, equipment, servings, and nutrition targets.</p>
+  <p>The app keeps an authenticated session on your device so you can stay signed in. Your account data is stored in the Supabase project configured for this app and is protected by account-scoped database access policies.</p>
+
+  <h2>AI features and photos</h2>
+  <p>When you request recipe generation, recipe changes, a meal plan, or a calorie estimate, mise sends the relevant ingredients, recipe details, and cooking preferences to our Supabase Edge Functions. Those functions use Groq to produce the requested result. For ingredient recognition or a photo-based calorie estimate, the photo you select is sent to Groq for that request. mise does not save the selected photo to its own account database.</p>
+  <p>AI-generated recipes, nutrition values, and photo-based calorie estimates can be inaccurate. Check ingredients, food safety guidance, and packaged-food allergen labels yourself. Do not rely on an AI estimate for medical or emergency decisions.</p>
+
+  <h2>Barcode lookup</h2>
+  <p>If you scan a packaged product barcode, mise sends the barcode to Open Food Facts to retrieve product details. Product data is supplied by that service and may be missing or incorrect. See the <a href="https://world.openfoodfacts.org/terms-of-use">Open Food Facts terms of use</a> for more about its product-data service.</p>
+
+  <h2>Household sharing</h2>
+  <p>Personal pantry and shopping-list entries remain associated with your account unless you choose to move them into a shared household. Household members can view and manage shared pantry and shopping-list entries. Share an invite code only with people you want in your kitchen.</p>
+
+  <h2>How information is used</h2>
+  <p>We use information to authenticate you, sync your mise account, provide the app features you request, apply your cooking preferences, support household sharing, and maintain the security and operation of the service. We do not claim to use your information for advertising.</p>
+
+  <h2>Service providers and transfers</h2>
+  <p>mise relies on Supabase for authentication, database storage, and Edge Functions; Groq for AI requests; and Open Food Facts for barcode product lookups. Information needed for a feature is sent to the relevant provider. Their own terms and privacy practices also apply. Provider processing locations and retention practices can change; consult their current documentation before relying on a particular location or retention period.</p>
+
+  <h2>Retention and account deletion</h2>
+  <p>You can request deletion in the app from <strong>Account → Delete account and data</strong>, or follow the instructions on our <a href="[ACCOUNT DELETION URL]">account deletion page</a>. Deleting your account removes your personal account and account-linked records. Shared household pantry and shopping-list entries may remain available to other household members as shared data; the deleted account’s creator attribution is cleared. Some limited records may remain temporarily in provider backups or logs under those providers’ retention practices.</p>
+
+  <h2>Children</h2>
+  <p>mise is a general cooking app and is not directed to children under 13. The publisher must update this section to match its intended audience and applicable local requirements before publication.</p>
+
+  <h2>Your choices and rights</h2>
+  <p>You can review and change cooking preferences in your account, remove pantry or saved items in the app, leave a household, and request account deletion. Depending on where you live, you may have additional rights to access, correct, export, restrict, or object to certain processing. Contact <a href="mailto:[SUPPORT EMAIL]">[SUPPORT EMAIL]</a> to make a request.</p>
+
+  <h2>Changes and contact</h2>
+  <p>We may update this policy as the app changes. We will update the date above when we do. Privacy questions: <a href="mailto:[SUPPORT EMAIL]">[SUPPORT EMAIL]</a>.</p>
+  <footer>© 2026 [PUBLISHER LEGAL NAME] · mise</footer>
+</main>
+</body>
+</html>
